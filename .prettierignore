@@ -1,0 +1,10 @@
+# this is a wildcard pattern that matches any file ending in '.env' e.g. production.env
+*.env
+.env
+
+# anything related to env file   e.g. .env.production
+.env.*
+
+/.vscode
+/node_modules
+/.dist
