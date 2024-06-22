@@ -1,0 +1,50 @@
+// require("dontenv").config({ path: "./env" })
+import dotenv from "dotenv";
+import connectDB from "./db/index.js";
+
+
+dotenv.config({
+    path: "./env"
+})
+connectDB()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(DB_NAME)
+// this is an IIFE function, a semicolon is added before it so as if semicolon isn't added the line before it, so as there won't be any problems
+// ; (async () => {
+//     try {
+//         await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
+//         app.on("error", (error) => {
+//             console.error("ERROR: ", error);
+//             throw error
+//         })
+
+//         app.listen(process.env.PORT, () => {
+//             console.log(`App is listening on port ${process.env.PORT}`)
+//         })
+
+//     } catch (error) {
+//         console.error("ERROR: ", error);
+//         throw error
+//         // exit the process on error
+//         process.exit(1)
+//     }
+// })()
+
+
+// app.on("error", (error) => {
+//     console.log("error ", error)
+//     throw error
+// })
